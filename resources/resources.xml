@@ -44,8 +44,8 @@
   <layout id="MainLayout">
     <drawable id="BgFill"/>
 
-    <label x="60"  y="243" text="@Strings.HeartRate" font="@Fonts.DoomFont14" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_RIGHT"/>
-    <label x="134" y="243" text="@Strings.Speed"     font="@Fonts.DoomFont14" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
+    <label x="60"  y="243" text="@Strings.HeartRate" id="HRDataLabel"  font="@Fonts.DoomFont14" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_RIGHT"/>
+    <label x="134" y="243" text="@Strings.Speed" id="SpeedDataLabel" font="@Fonts.DoomFont14" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
     <label x="60"  y="203" text="---" id="HRData"    font="@Fonts.DoomFont20" color="Gfx.COLOR_RED" justification="Gfx.TEXT_JUSTIFY_RIGHT"/>
     <label x="144" y="203" text="0"   id="SpeedData" font="@Fonts.DoomFont20" color="Gfx.COLOR_RED" justification="Gfx.TEXT_JUSTIFY_LEFT"/>
   </layout>

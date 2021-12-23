@@ -2,7 +2,9 @@
     <iq:application entry="BasicApp" id="D1457A329800496B8C91BF6E3F057152" launcherIcon="@Drawables.LauncherIcon" name="@Strings.AppName" minSdkVersion="1.3.1" type="datafield">
 
         <iq:products>
+            <iq:product id="edge530"/>
             <iq:product id="edge820"/>
+            <iq:product id="fr245m"/>
         </iq:products>
 
         <iq:permissions>

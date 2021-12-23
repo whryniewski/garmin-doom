@@ -85,6 +85,18 @@ class BasicView extends Ui.DataField {
         }
 
         setLayout(Rez.Layouts.MainLayout(dc));
+
+        var label_height = 30;
+	    var label_width = 39;
+	    var value_height = 11;
+	    var value_width = 29;
+	    var margin = 20;
+	
+        setLayout(Rez.Layouts.MainLayout(dc));
+	    View.findDrawableById("HRDataLabel").setLocation(canvas_width/2 - sprite_width/2 - margin, canvas_height/2);
+	    View.findDrawableById("SpeedDataLabel").setLocation(canvas_width/2 + sprite_width/2 + margin, canvas_height/2);
+	    View.findDrawableById("HRData").setLocation(canvas_width/2 - sprite_width/2 - margin, canvas_height/2 - sprite_height/2);
+	    View.findDrawableById("SpeedData").setLocation(canvas_width/2 + sprite_width/2 + margin, canvas_height/2 - sprite_height/2);
         return true;
     }
 
@@ -221,7 +233,7 @@ class BasicView extends Ui.DataField {
 
         // Draw the sprite
         var offset_x = canvas_width/2 - sprite_width/2;
-        var offset_y = canvas_height - sprite_height;
+        var offset_y = canvas_height/2 - sprite_height/2;
         var padding_x = 4;
         var padding_y = 4;
         var x = (-padding_x * (sprite_x+1)) - (sprite_x*sprite_width);
